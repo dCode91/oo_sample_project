@@ -6,7 +6,10 @@ operation:
     - num2
   python_action:
     use_jython: false
-    script: "# do not remove the execute function\ndef execute(num1, num2):\n    # Store input numbers\n\n    # Add two numbers\n    sum = float(num1) + float(num2)\n    return {\"sum\": sum}\n    \n# you can add additional helper methods below."
+    script: |-
+      def execute(num1, num2):
+          sum = float(num1) + float(num2)
+          return {"sum": sum}
   outputs:
     - sum: '${sum}'
   results:
