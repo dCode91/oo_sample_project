@@ -7,14 +7,13 @@ operation:
       # do not remove the execute function
       def execute():
           # Store input numbers
-          num1 = input('Enter first number: ')
-          num2 = input('Enter second number: ')
+          num1 = 1
+          num2 = 2
 
           # Add two numbers
           sum = float(num1) + float(num2)
 
           # Display the sum
-          print('The sum of {0} and {1} is {2}'.format(num1, num2, sum))
       # you can add additional helper methods below.
   results:
     - SUCCESS
